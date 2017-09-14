@@ -1,0 +1,22 @@
+{
+  "name": "node_tcp",
+  "version": "1.0.0",
+  "description": "A simple application to create a tcp server and talk to it",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./src --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "startServer": "node dist/server.js",
+    "startClient": "node dist/client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "net": "^1.0.2"
+  }
+}
